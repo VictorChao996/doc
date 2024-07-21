@@ -1,4 +1,6 @@
+
 - [Home](/)
-- [Playground](./playground.md)
-- [Docsify Notes](./docsify/docsify.md)
-- [SideBar](./_sidebar.md)
+<!-- - [SideBar](./_sidebar.md) -->
+<!-- - [Playground](./playground.md) -->
+- [Notes](./notes/)
+- [About](./about.md)

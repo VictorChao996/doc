@@ -1,12 +1,10 @@
 # Home
-
 > Everyone needs a personal document. 
 ## Intro
 Hi there! This is a personal document for Victor.
 
+He write notes for future reference.
 
-He write notes for future used.
+All notes are linked on the [Notes page](./notes/).
 
-
-## Pages
-- [Docsify Note](./docsify/docsify.md) 
+see the [About page](./about.md) for more details about Victor.

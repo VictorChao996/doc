@@ -1,8 +1,5 @@
 
-- Getting started
-  * [Home](README.md)
-  * [Playground](./playground.md)
-  * [About](about.md)
-
-* Reference
-  * [Docsify notes](./docsify/docsify.md)
+* [Home](README.md)
+* [Notes](./notes/README.md)
+* [MD-example](./notes/docsify-markdown-example.md)
+* [About](about.md)
