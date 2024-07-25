@@ -50,6 +50,27 @@
           formatUpdated: "{YYYY}/{MM}/{DD} {HH}:{mm}",
           whereToPlace: "bottom",  // "top" or "bottom", default to "bottom"
         },
+        plugins: [
+          //add edit file button
+          function editButton(hook, vm) {
+            // The date template pattern
+            $docsify.formatUpdated = '{YYYY}/{MM}/{DD} {HH}:{mm}';
+
+            hook.beforeEach(function (html) {
+              var url =
+                'https://github.com/VictorChao996/doc/tree/master/docs/' +
+                vm.route.file;
+              var editHtml = `<div align='right' style='color:gray'><a href='${url}'>[📝 EDIT DOCUMENT]</a></div>`;
+              return (
+                html +
+                '\n' +
+                '\n----\n' +
+                editHtml
+              );
+            });
+          },
+        ],
+
       }
     </script>
     <!-- Docsify v4 -->
@@ -63,7 +84,7 @@
     <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script>
 
