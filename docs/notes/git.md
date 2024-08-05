@@ -46,6 +46,8 @@ git checkout <branch>
 
 git merge <branch> //合併分支<branch>到當前分支
 git rebase <branch> //將當前分支的基準定義為 <branch>
+
+git branch -m <old branch name> <new branch name> //rename branch
 ```
 
 ## Reset
